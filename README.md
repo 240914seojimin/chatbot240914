@@ -1,6 +1,6 @@
-# 💬 챗봇 템플릿
+# 💬 지구촌 수도 챗봇
 
-OpenAI 모델을 사용해 챗봇을 만드는 방법을 보여주는 간단한 Streamlit 앱 예제입니다.
+지구촌 수도 챗봇은 OpenAI 모델을 사용해 챗봇을 만드는 방법을 보여주는 간단한 Streamlit 앱 예제입니다.
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-template.streamlit.app/)
 

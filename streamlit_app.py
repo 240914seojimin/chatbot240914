@@ -3,10 +3,10 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.set_page_config(page_title="챗봇", page_icon="💬")
-st.title("💬 챗봇")
+st.set_page_config(page_title="지구촌 수도 챗봇", page_icon="💬")
+st.title("💬 지구촌 수도 챗봇")
 st.write(
-    "모델 선택, 시스템 프롬프트, 온도(Temperature)와 토큰 제한을 시연하는 간단한 챗봇 예제입니다. "
+    "지구촌 수도 챗봇은 모델 선택, 시스템 프롬프트, 온도(Temperature), 토큰 제한을 시연하는 간단한 챗봇 예제입니다. "
     "앱을 사용하려면 OpenAI API 키를 제공하세요."
 )
 
