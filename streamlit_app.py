@@ -10,6 +10,31 @@ st.write(
     "예: '대한민국의 수도는 어디인가요?'와 같이 물어보세요. 모델을 바꿔가며 테스트할 수 있습니다. 앱을 사용하려면 OpenAI API 키를 제공하세요."
 )
 
+# 페이지 배경으로 큰 지구 이모지를 표시 (투명도 낮게)
+st.markdown(
+        """
+        <style>
+        .stApp {
+            position: relative;
+            z-index: 1;
+        }
+        .stApp::before {
+            content: '🌍';
+            position: fixed;
+            top: 12%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            font-size: 36vmin;
+            opacity: 0.06;
+            z-index: 0;
+            pointer-events: none;
+            filter: drop-shadow(0 0 40px rgba(0,0,0,0.03));
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+)
+
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
